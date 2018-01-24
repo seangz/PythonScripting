@@ -12,6 +12,7 @@ def calculate_bmi(weight, height, unit='metric'):
         bmi = 703 * (weight / (height ** 2))
     print ("Your BMI is %s" % bmi)
 
+
 while True:
     height, weight, unit = gather_info()
     if unit.startswith('i'):
@@ -20,4 +21,7 @@ while True:
         calculate_bmi(weight, height, unit)
         break
     else:
-        print("Error: Unknown measurement system. Please use imperial or metric.")
+        print("Error: Unknown measurement system. Please use imperial or metric.")      
+
+    
+    
